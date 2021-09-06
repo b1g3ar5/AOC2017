@@ -1,0 +1,146 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 67f3a1e3db69dcd88d0e9cd69acfb1586763c2ae028f54c50dcf77fc9164b7e4
+
+name:           AOC2017
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/AOC2017#readme>
+homepage:       https://github.com/githubuser/AOC2017#readme
+bug-reports:    https://github.com/githubuser/AOC2017/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2021 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/AOC2017
+
+library
+  exposed-modules:
+      Alg
+      Day1
+      Day10
+      Day11
+      Day12
+      Day13
+      Day14
+      Day14a
+      Day15
+      Day16
+      Day17
+      Day18
+      Day19
+      Day2
+      Day20
+      Day21
+      Day22
+      Day23
+      Day24
+      Day25
+      Day3
+      Day4
+      Day5
+      Day6
+      Day7
+      Day8
+      Day9
+      Disjoints
+      Lib
+      Memo
+      Ring
+      Tape
+      TotalMap
+      Utils
+  other-modules:
+      Paths_AOC2017
+  hs-source-dirs:
+      src
+  build-depends:
+      MemoTrie
+    , Stream
+    , Tape
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , mtl
+    , parallel
+    , parsec
+    , pointedlist
+    , semigroupoids
+    , split
+    , text
+    , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+executable AOC2017-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_AOC2017
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -fprof-auto -O2
+  build-depends:
+      AOC2017
+    , MemoTrie
+    , Stream
+    , Tape
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , mtl
+    , parallel
+    , parsec
+    , pointedlist
+    , semigroupoids
+    , split
+    , text
+    , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
+
+test-suite AOC2017-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_AOC2017
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      AOC2017
+    , MemoTrie
+    , Stream
+    , Tape
+    , array
+    , base >=4.7 && <5
+    , comonad
+    , containers
+    , distributive
+    , mtl
+    , parallel
+    , parsec
+    , pointedlist
+    , semigroupoids
+    , split
+    , text
+    , timeit
+    , unordered-containers
+    , vector
+  default-language: Haskell2010
