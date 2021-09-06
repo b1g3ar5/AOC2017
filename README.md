@@ -1,13 +1,13 @@
 # AOC2017
 
-The slow days are: 
+The solutions run in about a minute. The slow days are: 
 
-day3 - 14s
-day5 - 40s
-day14 - 70s
-day15 - 30s 
-day17 - 14s
-day22 - 35s
+day14 - 11s
+day15 - 15s 
+day22 - 20s
+
+It's all Haskell and I don't use many of the non standard libraries and there 
+is not much use of the mutable libraries.
 
 
-Day14 was working out groups of neighbouring cells on a 128*128 grid.
+
